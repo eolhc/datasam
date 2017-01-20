@@ -1,0 +1,129 @@
+body {
+  font-family: "Muli";
+  overflow: scroll;
+}
+
+h1, h2, h3 {
+  font-family: "Ovo";
+  color: #0267C1;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+btn {
+  color: #0267C1;
+}
+
+.fa {
+  color: #0267C1;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-default {
+  background-color: transparent !important;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+  color: #EFE9E7;
+  display: inline-block;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #EFE9E7;
+  font-size: 0.8em;
+  padding-top: 2.2em;
+}
+
+.dropdown, .open {
+  background-color: transparent!important;
+}
+
+.dropdown-menu {
+  background-color:#EFE9E7;
+  border: none;
+}
+
+.dropdown li a {
+  background-color: transparent;
+}
+
+.dropdown li a:hover {
+  background-color: #D8CECB;
+
+}
+
+.jumbotron {
+  background-image: url(network.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100vw;
+  margin-top: 0;
+  position: relative;
+  display: block;
+  top: 50%;
+  transform: translateY(-6em);
+  margin-bottom: 0px;
+}
+
+.jumbotron .container {
+  margin-top: 4em;
+  font-family: "Ovo";
+  color: #EFE9E7;
+}
+
+.section {
+  transform: translateY(-6em);
+  padding: 2em;
+  text-align: center;
+}
+
+#about {
+  background-color: white;
+}
+
+#services {
+  text-align: center;
+  background-color: #cedbe5;
+}
+
+#contact, #careers {
+  text-align: left;
+  background-color: white;
+}
+
+#values  {
+  background-color: white;
+}
+
+#team {
+  background-color: #cedbe5;
+}
+
+.row {
+  vertical-align: center;
+}
+
+footer {
+  text-align: center;
+}
