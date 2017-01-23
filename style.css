@@ -32,6 +32,10 @@ h4 {
   color: #06D6A0;
 }
 
+.fa:hover {
+  color: #0BEFB2;
+}
+
 .navbar-brand {
   padding: 0;
   margin: 0;
@@ -167,8 +171,8 @@ h4 {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #06D6A0;
-  border-color: #06D6A0;
+  background-color: #0BEFB2;
+  border-color: #0BEFB2;
   font-size: 1em;
 }
 
@@ -178,7 +182,9 @@ h4 {
   color: #0057B5;
 }
 
-
+#info {
+  display: none;
+}
 
 #about {
   background-color: white;
