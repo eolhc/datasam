@@ -4,29 +4,39 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: "Ovo";
+  font-family: "Montserrat";
   color: #0267C1;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 24px;
-}
-
-h3 {
   font-size: 20px;
 }
 
-h4 {
+h3 {
   font-size: 18px;
 }
 
-btn {
-  color: #0267C1;
+h4 {
+  font-size: 16px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #06D6A0;
+  border-color: #06D6A0;
+  font-size: 15px;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #06D6A0;
+  border-color: #06D6A0;
+  font-size: 15px;
 }
 
 .fa {
@@ -72,8 +82,20 @@ btn {
 
 }
 
+.navbar, .navbar-default, .navbar-static-top {
+  background-color: black!important;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #06D6A0;
+}
+
 .jumbotron {
-  background-image: url(network.jpg);
+  background-image: url(chameleon.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -82,20 +104,55 @@ btn {
   position: relative;
   display: block;
   top: 50%;
-  transform: translateY(-6em);
+  transform: translateY(-2em);
   margin-bottom: 0px;
 }
 
 .jumbotron .container {
-  margin-top: 4em;
-  font-family: "Ovo";
+  padding: 1em 3em;
+  font-family: "Montserrat";
   color: #EFE9E7;
+  position: absolute;
+  bottom: 0em;
+  background-color: black;
+}
+
+.jumbotron h1 {
+  color: #06D6A0;
+  font-style: italic;
+  /*line-height: 1.2em;*/
+}
+
+.jumbotron h1 span, .jumbotron p span {
+  background-color: black;
+  padding: 0em; 1em;
+
+}
+
+.jumbotron p span {
+  padding: 0.2em 0em;
+}
+
+.jumbotron p {
+  margin-bottom: 15px;
+  font-weight: 100;
+  font-size: 15px;
+  /*line-height: 1.2em;*/
 }
 
 .section {
-  transform: translateY(-6em);
-  padding: 2em;
-  text-align: center;
+  transform: translateY(-2em);
+  padding: 2em 5em;
+  text-align: left;
+  border-bottom: lightgrey 1px solid;
+}
+
+.section h1 {
+  text-transform: uppercase;
+}
+
+.container {
+  text-align: right;
 }
 
 #about {
@@ -126,4 +183,11 @@ btn {
 
 footer {
   text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  .jumbotron h1 {
+    font-size: 48px;
+  }
 }
