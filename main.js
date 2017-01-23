@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  $('#info').fadeIn(2000)
+  $(".jumbotron").fadeIn(2000);
+  $('#info').fadeIn(2000);
 
   $(".navbar").find("a").click(function(e) {
     e.preventDefault();
@@ -7,5 +8,6 @@ $(document).ready(function() {
     $("html, body").animate({
         scrollTop: $(section).offset().top - 50
     });
-});
+  });
+
 })
