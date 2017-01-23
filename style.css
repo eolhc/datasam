@@ -1,31 +1,31 @@
 body {
-  font-family: "Muli";
+  font-family: "Muli", Arial, Helvetica, sans-serif;
   overflow: scroll;
 }
 
 h1, h2, h3 {
-  font-family: "Montserrat";
+  font-family: "Montserrat","Arial Black", sans-serif;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 2em;
   font-weight: bold;
-  border-bottom: #06D6A0 2px solid;
-  padding-bottom: 1em;
+  border-bottom: #06D6A0 0.1em solid;
+  padding-bottom: 0.8em;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 1.2em;
   color: #0057B5;
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 1.2em;
   color: #0057B5;
 }
 
 h4 {
-  font-size: 12px;
+  font-size: 1em;
 }
 
 .fa {
@@ -73,21 +73,30 @@ h4 {
   color: #06D6A0;
 }
 
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  color: #06D6A0;
+  background-color: black;
+}
+
 .dropdown, .open {
   background-color: transparent!important;
 }
 
 .dropdown-menu {
-  background-color:#EFE9E7;
+  background-color: black;
+  color: white;
   border: none;
 }
 
 .dropdown li a {
   background-color: transparent;
+  color: white;
+  font-size: 0.8em;
 }
 
 .dropdown li a:hover {
-  background-color: #D8CECB;
+  color: #06D6A0;
+  background-color: black;
 
 }
 
@@ -101,13 +110,13 @@ h4 {
   position: relative;
   display: block;
   top: 50%;
-  transform: translateY(-2em);
-  margin-bottom: 0px;
+  transform: translateY(2em);
+  margin-bottom: 0;
 }
 
 .jumbotron .container {
   padding: 1em 5em;
-  font-family: "Montserrat";
+  font-family: "Montserrat","Arial Black", sans-serif;
   color: #EFE9E7;
   position: absolute;
   bottom: 0em;
@@ -133,17 +142,16 @@ h4 {
 }
 
 .jumbotron p {
-  margin-bottom: 15px;
+  margin-bottom: 1em;
   font-weight: 100;
-  font-size: 15px;
+  font-size: 1.2em;
   /*line-height: 1.2em;*/
 }
 
 .section {
-  transform: translateY(-2em);
+  transform: translateY(2em);
   padding: 2em 5em;
   text-align: left;
-  /*border-bottom: lightgrey 1px solid;*/
 }
 
 .section h1 {
@@ -154,19 +162,19 @@ h4 {
   color: #fff;
   background-color: #06D6A0;
   border-color: #06D6A0;
-  font-size: 15px;
+  font-size: 1em;
 }
 
 .btn-primary:hover {
   color: #fff;
   background-color: #06D6A0;
   border-color: #06D6A0;
-  font-size: 15px;
+  font-size: 1em;
 }
 
 .lead-line {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1.3em;
   color: #0057B5;
 }
 
@@ -211,12 +219,18 @@ footer {
 
 @media screen and (min-width: 768px) {
   .jumbotron h1 {
-    font-size: 48px;
+    font-size: 3.5em;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .left-cell {
     text-align: center;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: white;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: white;
   }
 }
