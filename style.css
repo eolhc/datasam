@@ -73,6 +73,14 @@ h4 {
   padding-top: 2.2em;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: black;
+}
+
 .dropdown, .open {
   background-color: transparent!important;
 }
