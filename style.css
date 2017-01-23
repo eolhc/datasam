@@ -5,24 +5,27 @@ body {
 
 h1, h2, h3 {
   font-family: "Montserrat";
-  color: #0267C1;
 }
 
 h1 {
   font-size: 24px;
   font-weight: bold;
+  border-bottom: #06D6A0 2px solid;
+  padding-bottom: 1em;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 16px;
+  color: black;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 14px;
+  color: #0267C1;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .btn-primary {
@@ -37,6 +40,12 @@ h4 {
   background-color: #06D6A0;
   border-color: #06D6A0;
   font-size: 15px;
+}
+
+.lead-line {
+  font-weight: 700;
+  font-size: 16px;
+  color: #0057B5;
 }
 
 .fa {
@@ -109,17 +118,19 @@ h4 {
 }
 
 .jumbotron .container {
-  padding: 1em 3em;
+  padding: 1em 5em;
   font-family: "Montserrat";
   color: #EFE9E7;
   position: absolute;
   bottom: 0em;
   background-color: black;
+  width: 100%;
 }
 
 .jumbotron h1 {
   color: #06D6A0;
   font-style: italic;
+  border-bottom: none;
   /*line-height: 1.2em;*/
 }
 
@@ -144,24 +155,27 @@ h4 {
   transform: translateY(-2em);
   padding: 2em 5em;
   text-align: left;
-  border-bottom: lightgrey 1px solid;
+  /*border-bottom: lightgrey 1px solid;*/
 }
 
 .section h1 {
   text-transform: uppercase;
 }
-
-.container {
+/*
+.container .btn {
   text-align: right;
-}
+}*/
 
 #about {
   background-color: white;
 }
 
 #services {
+  background-color: #E8F3FC;
+}
+
+#services .cell, #team .cell {
   text-align: center;
-  background-color: #cedbe5;
 }
 
 #contact, #careers {
@@ -174,12 +188,21 @@ h4 {
 }
 
 #team {
-  background-color: #cedbe5;
+  background-color: #E8F3FC;
+}
+
+.left-cell {
+  text-align: left;
 }
 
 .row {
   vertical-align: center;
 }
+
+/*.col-md-3 {
+  text-align: center;
+
+}*/
 
 footer {
   text-align: center;
@@ -189,5 +212,11 @@ footer {
 @media screen and (min-width: 768px) {
   .jumbotron h1 {
     font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left-cell {
+    text-align: center;
   }
 }
