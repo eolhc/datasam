@@ -112,6 +112,17 @@ h4 {
 
 .carousel-caption {
   text-align: left;
+  height: 20%;
+}
+
+.carousel-caption a {
+  color: white;
+}
+
+.carousel-caption a:hover {
+  color: #1967BC;
+  text-decoration: none;
+  font-style: italic;
 }
 
 /*.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
@@ -296,6 +307,14 @@ footer {
   .carousel-inner > .item > a > img {
     height: 100%;
     width: 100%;
+  }
+
+  .carousel-caption {
+    height: 30%;
+  }
+
+  .section {
+    padding: 2em 2em;
   }
 
 }
