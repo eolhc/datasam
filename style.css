@@ -1,11 +1,11 @@
 body {
-  font-family: "Muli", Arial, Helvetica, sans-serif;
+  font-family: "Catamaran", Arial, Helvetica, sans-serif;
   overflow: scroll;
   background-color: black;
 }
 
 h1, h2, h3 {
-  font-family: "Montserrat","Arial Black", sans-serif;
+  font-family: "Rajdhani","Arial Black", sans-serif;
 }
 
 h1 {
@@ -75,11 +75,11 @@ h4 {
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  color: #06D6A0;
+  color: #1967BC;
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-  color: #06D6A0;
+  color: #1967BC;
   background-color: black;
 }
 
@@ -100,54 +100,88 @@ h4 {
 }
 
 .dropdown li a:hover {
-  color: #06D6A0;
+  color: #1967BC;
   background-color: black;
 
 }
 
+
+.carousel, .carousel-inner, .item, .item img, .item .active img {
+  height: 100%;
+}
+
+.carousel-caption {
+  text-align: left;
+}
+
+/*.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+  height: 100%;
+}*/
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+  max-width: 500%;
+}
+
+.carousel-caption {
+  padding: 0;
+  right: 0;
+  left: 0;
+}
+
 .jumbotron {
-  background-image: url(chameleon.jpg);
-  background-size: cover;
+  /*background-image: url(chameleon.jpg);
+  background-size: cover;*/
   background-repeat: no-repeat;
   min-height: 100vh;
   width: 100vw;
   margin-top: 0;
   position: relative;
   top: 50%;
-  transform: translateY(2em);
+  transform: translateY(3em);
   margin-bottom: 0;
   display: none;
+  text-align: left;
 }
 
 .jumbotron .container {
-  padding: 1em 5em;
-  font-family: "Montserrat","Arial Black", sans-serif;
+  padding: 1em 0;
+  font-family: "catamaran","Arial Black", sans-serif;
   color: #EFE9E7;
   position: absolute;
   bottom: 0em;
   background-color: black;
   width: 100%;
+  height: 100%;
 }
 
 .jumbotron h1 {
-  color: #06D6A0;
-  font-style: italic;
+  color: white;
   border-bottom: none;
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+  text-align: left;
   /*line-height: 1.2em;*/
 }
 
-.jumbotron h1 span, .jumbotron p span {
-  background-color: black;
-  padding: 0em; 1em;
-
+.carousel-caption {
+  background-color: rgba(0,0,0,0.7);
+  bottom: 0px;
+  padding: 0em 3em;
 }
 
-.jumbotron p span {
-  padding: 0.2em 0em;
+.jumbotron h1 span, .jumbotron p span {
+  opacity: 80%;
+
 }
 
 .jumbotron p {
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   font-weight: 100;
   font-size: 1.2em;
   /*line-height: 1.2em;*/
@@ -163,22 +197,27 @@ h4 {
   text-transform: uppercase;
 }
 
+a.btn.btn-primary.btn-lg {
+  z-index: 999;
+}
+
 .btn-primary {
   color: #fff;
-  background-color: #06D6A0;
-  border-color: #06D6A0;
-  font-size: 1em;
+  background-color: #0057B5;
+  border-color: #0057B5;
+  font-size: 0.7em;
+  text-transform: uppercase;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0BEFB2;
-  border-color: #0BEFB2;
+  background-color: #1967BC;
+  border-color: #1967BC;
   font-size: 1em;
 }
 
 .lead-line {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 1.3em;
   color: #0057B5;
 }
@@ -191,8 +230,12 @@ h4 {
   background-color: white;
 }
 
-#services {
+#research {
   background-color: #E8F3FC;
+}
+
+#services {
+  background-color: white;
 }
 
 #services .cell, #team .cell {
@@ -201,15 +244,15 @@ h4 {
 
 #contact, #careers {
   text-align: left;
-  background-color: white;
+  background-color: #E8F3FC;
 }
 
 #values  {
-  background-color: white;
+  background-color: #E8F3FC;
 }
 
 #team {
-  background-color: #E8F3FC;
+  background-color: white;
 }
 
 .left-cell {
@@ -228,13 +271,18 @@ footer {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .jumbotron h1 {
-    font-size: 3.5em;
+    font-size: 3em;
+  }
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    height: 100%;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .left-cell {
     text-align: center;
   }
@@ -244,4 +292,22 @@ footer {
   .navbar-default .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu>li>a {
     color: white;
   }
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    height: 100%;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    height: 100%;
+    width: auto;
+  }
+
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    width: auto;
+  }
+
 }
