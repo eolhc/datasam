@@ -255,7 +255,7 @@ a.btn.btn-primary.btn-lg {
 }
 
 #research {
-  background-color: #E8F3FC;
+  background-color: #f9fafc;
 }
 
 #services {
@@ -268,15 +268,21 @@ a.btn.btn-primary.btn-lg {
 
 #contact, #careers {
   text-align: left;
-  background-color: #E8F3FC;
+  background-color: #f9fafc;
 }
 
 #values  {
-  background-color: #E8F3FC;
+  background-color: #f9fafc;
 }
 
 #team {
   background-color: white;
+}
+
+#footer {
+  background-color: #f9fafc;
+  text-align: center;
+  padding: 0em;
 }
 
 .left-cell {
@@ -289,10 +295,6 @@ a.btn.btn-primary.btn-lg {
 
 .row {
   vertical-align: center;
-}
-
-footer {
-  text-align: center;
 }
 
 @media screen and (min-width: 769px) {
