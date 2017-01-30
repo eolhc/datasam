@@ -37,9 +37,18 @@ h4 {
   color: #0BEFB2;
 }
 
+.nav>li {
+  margin-top: 0.85em;
+}
+
 .navbar-brand {
   padding: 0;
   margin: 0;
+}
+
+.navbar-brand > img {
+  width: 6em;
+  margin: 0em 1em;
 }
 
 .navbar-default {
